@@ -1,9 +1,13 @@
 .left-bar {
   height: 90%;
   margin: 0 5px;
+  left: 10px;
   width: 40px;
+  z-index: 5;
   position: fixed;
   /* background-color: red; */
+  transition: all 0.2s;
+
   bottom: 0;
 }
 .hi {
@@ -37,14 +41,13 @@ body {
   height: 20px;
   padding: 20px;
   color: #a8b2d1;
-  transition: all 0.2s;
   /* background-color: red; */
 }
 
 .left-bar__icon:hover {
   color: aquamarine;
-  padding-right: 1px;
 }
+
 .left-bar__list {
   list-style: none;
   display: flex;
@@ -58,15 +61,27 @@ body {
   color: #a8b2d1;
   /* background-color: currentColor; */
 }
+.left-bar__list li {
+}
 
 .left-bar__link {
   padding: 10px;
-  /* background-color: BLUE; */
+  margin-right: 5px;
   position: relative;
   display: inline-block;
-  /* background-color: red; */
+  left: 0px;
+  color: azure;
+  transition: all 0.2s;
+  border-radius: 5px;
+}
+.left-bar__link:hover {
+  color: aquamarine;
+  left: 5px;
 }
 
+.left-bar__link:active {
+  background-color: rgb(42, 94, 76);
+}
 .right-bar {
   position: fixed;
   bottom: 0;
@@ -75,7 +90,7 @@ body {
   /* background-color: aqua;    */
   height: 87%;
   width: 40px;
-  margin: 0 6px;
+  margin: 0 5px;
 }
 
 .email {
@@ -83,6 +98,7 @@ body {
   flex-direction: column;
   align-items: center;
   position: relative;
+  height: 100vh;
 }
 
 .email-link {
@@ -113,8 +129,9 @@ body {
 }
 
 header {
-  padding: 0 10px;
+  padding: 0 15px;
   display: flex;
+  z-index: 10;
   justify-content: space-between;
   align-items: center;
   top: 0;
@@ -142,13 +159,15 @@ header {
   /* justify-content: space-between; */
   width: 21%;
   color: #a8b2d1;
-
   list-style: none;
   /* background-color: red; */
   padding: 0;
   margin: 0;
+  width: 100%;
   align-self: stretch;
+
   align-items: center;
+  justify-content: flex-end;
 }
 
 .header__list-item {
@@ -167,14 +186,13 @@ header {
   transform: translateY(-2px);
 }
 
-
 .header__list-item:last-child {
   margin-right: 12px;
 }
 .logo {
   /* background-color: red; */
   align-self: stretch;
-
+  margin-left: 10px;
   height: 42px;
   width: 42px;
 }
@@ -182,12 +200,9 @@ header {
 .logo-icon {
   /* margin: 2px 4px; */
 }
-main {
-  /* background-color: red; */
-  padding: 0 100px;
-}
 
 main {
+  padding: 0 120px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -225,16 +240,26 @@ main {
 }
 .link {
   margin-top: 10px;
-
+  transition: all 1s;
   margin-right: auto;
   padding: 10px 15px;
+  transition: all 1s ease-in-out;
   border: 1px solid aquamarine;
   /* background-color: red; */
 }
 .intro__email-link {
   text-decoration: none;
+  height: 100%;
+  width: 100%;
+  background-color: #0a192f;
+
   color: aquamarine;
 }
+
+.link:hover {
+  border: 1px dotted aqua;
+}
+
 .intro__p {
   margin: 20px 0;
   line-height: 22px;
@@ -256,7 +281,6 @@ animation: moveinright 2s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s ; */
   /* transition: opacity 0.5s  0.2s ; */
 }
 
-
 .work {
   align-self: stretch;
   padding: 12px 2px;
@@ -276,6 +300,7 @@ animation: moveinright 2s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s ; */
   align-items: center;
   justify-content: center;
   display: flex;
+  padding-bottom: 22px;
 }
 
 .inner {
@@ -474,6 +499,7 @@ animation: moveinright 2s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s ; */
   padding: 10px 25px;
   color: aqua;
   margin-top: 12px;
+  margin-bottom: 5px;
   border: 1px solid aquamarine;
 }
 
@@ -516,24 +542,185 @@ animation: moveinright 2s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s ; */
   padding: 5px;
 }
 
-
-
-
-@keyframes moveinright{
-  0%{
+@keyframes moveinright {
+  0% {
     opacity: 0.1;
-transform: translateX(100px);
+    transform: translateX(100px);
   }
 
-  50%{
+  50% {
     opacity: 0.5;
     transform: translateX(50px);
-
   }
 
-  100%{
+  100% {
     opacity: 1;
-transform: translateX(0px);
-
+    transform: translateX(0px);
   }
+}
+
+.education {
+  box-shadow: 2px 7px 12px 7px rgba(0, 0, 0, 0.5);
+  display: flex;
+  padding: 15px 10px;
+  background-color: rgb(2, 2, 19);
+  align-self: stretch;
+}
+
+.education_button {
+  border: 1px solid aquamarine;
+  text-decoration: none;
+  color: aquamarine;
+  padding: 15px 10px;
+  margin-left: 12px;
+  transition: all 1s ease-in-out;
+}
+
+.education_button:hover {
+  background-color: aquamarine;
+  color: #191f31;
+}
+
+.education_button:active {
+  color: #191f31;
+  border: 1px dotted aquamarine;
+}
+
+.education_content {
+  display: flex;
+  align-items: center;
+}
+
+.education_details {
+  color: #a8b2d1;
+  padding: 10px 15px;
+  margin-left: 12px;
+}
+
+.education_list {
+  list-style: none;
+}
+.education_list h2 {
+  text-decoration: underline;
+}
+
+.education_list-item {
+  padding: 10px 5px;
+}
+
+.skills_list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.skills_list-item {
+  flex: 0 0 50%;
+}
+
+.skills_list-icon {
+  height: 10px;
+  width: 10px;
+  margin-right: 7px;
+  fill: aquamarine;
+}
+
+.navigation {
+  display: none;
+}
+
+.navigation_checkbox {
+  display: none;
+}
+
+.navigation_button {
+}
+
+.navigation_icon {
+}
+
+.navigation_nav {
+}
+
+.navigation_list {
+}
+
+.navigation_item {
+}
+
+@media screen and (max-width: 500px) {
+  .left-bar,
+  .right-bar {
+    display: none;
+  }
+  .header {
+    width: 100%;
+    height: 90%;
+  }
+  .header__list {
+    width: 100%;
+    height: 100%;
+    margin-right: 5px;
+    align-items: center;
+    justify-content: center;
+  }
+  .navigation {
+    /* display: block; */
+  }
+  .logo {
+    display: none;
+  }
+  main {
+    padding: 0 20px;
+  }
+
+  .intro {
+    justify-content: flex-start;
+
+    align-self: stretch;
+  }
+  .skills_list {
+    padding-left: 1px;
+  }
+  .skills_list-icon {
+    margin-left: 0px;
+  }
+  .about_me{
+    flex-direction: column;
+  }
+  .inner{
+    padding:22px 5px;
+    margin-bottom: 10px;
+  }
+  .about_image{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .project_list-item{
+flex-direction: column;
+  }
+  .project_list-item-right{
+flex-direction: column-reverse;
+margin-top: 25px;;
+  }
+  .project__image{
+    left:0
+  }
+
+  .project__image-right{
+    left:0;
+    bottom:15px;
+    top:5px;
+right:0;
+  }
+  .project-content p{
+    margin-top: 25px;
+  }
+.project-content-right p {
+  color: aqua;
+  margin-top:25px;
+  padding: 2px 1px;
+  margin-right: 1px;
+}
 }
