@@ -443,40 +443,37 @@ h2 {
   /* z-index: 2; */
 }
 
-
-
-.contact{
+.contact {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.whatnext{
-  color:aquamarine;
+.whatnext {
+  color: aquamarine;
 }
 
-.contact h2{
+.contact h2 {
   color: rgba(255, 255, 255, 0.671);
 }
-.message{
+.message {
   color: #8892b0;
 
   padding: 2px 12px;
-  width:50%;
+  width: 50%;
   text-align: center;
 }
 
-.hello{
+.hello {
   text-decoration: none;
   padding: 10px 25px;
   color: aqua;
-  margin-top:12px ;
+  margin-top: 12px;
   border: 1px solid aquamarine;
 }
 
-
-.copyright{
+.copyright {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -484,13 +481,33 @@ h2 {
   padding: 15px;
   min-height: 70px;
   margin-top: 20px;
-  color:azure
+  color: azure;
 }
 
-.footer-line{
-  margin-top: 40px ;
+.footer-line {
+  margin-top: 40px;
   height: 1px;
-  width:90vw;
-  
+  width: 90vw;
+
   background-color: rgb(57, 65, 63);
+}
+
+.project_links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.project_links a {
+  text-decoration: none;
+}
+
+.external {
+  width: 20px;
+  height: 20px;
+  margin-top: 8px;
+  color: #a8b2d1;
+
+  margin-right: 5px;
+  padding: 5px;
 }
