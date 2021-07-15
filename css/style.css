@@ -32,8 +32,9 @@ body {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   margin: 0;
   padding: 0;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
+  min-height: 100%;
   background-color: #0a192f;
 }
 .left-bar__icon {
@@ -471,7 +472,6 @@ animation: moveinright 2s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s ; */
   right: 20px;
   /* z-index: 2; */
 }
-
 .contact {
   display: flex;
   flex-direction: column;
