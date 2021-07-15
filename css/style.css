@@ -212,10 +212,12 @@ main {
 
 .intro {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   flex-direction: column;
+  align-self: stretch;
   margin-bottom: 20px;
+  
   /* background-color: red; */
 }
 
