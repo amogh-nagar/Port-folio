@@ -10,7 +10,7 @@
     />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Portfolio</title>
   </head>
   <body>
@@ -48,7 +48,7 @@
               <a href="#about">About</a>
             </li>
             <li class="header__list-item">
-              <a href="#experience">Experience</a>
+              <a href="#education">Education</a>
             </li>
             <li class="header__list-item">
               <a href="#work">Work</a>
@@ -60,7 +60,17 @@
         </nav>
       </header>
 
-      <div class="left-bar">
+      <div
+        class="left-bar"
+        data-aos="slide-up"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="true"
+        data-aos-anchor-placement="top-center"
+      >
         <ul class="left-bar__list">
           <li>
             <a href="#" class="left-bar__link">
@@ -154,7 +164,17 @@
       </div>
 
       <main>
-        <section class="intro">
+        <section
+          class="intro"
+          data-aos="flip-down"
+          data-aos-offset="200"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-anchor-placement="top-center"
+        >
           <div class="hi">Hi My Name is</div>
           <div class="h1div"><h1 class="intro__name">Amogh Nagar</h1></div>
 
@@ -174,7 +194,17 @@
         </section>
 
         <div class="line"></div>
-        <section id="about">
+        <section
+          id="about"
+          data-aos="zoom-in"
+          data-aos-offset="200"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="true"
+          data-aos-anchor-placement="top-center"
+        >
           <div class="about_me">
             <h2>About me</h2>
             <div class="text_line"></div>
@@ -215,7 +245,19 @@
           </div>
         </section>
         <div class="line"></div>
-        <section class="work">
+
+        <section
+          id="work"
+          class="work"
+          data-aos="zoom-in"
+          data-aos-offset="200"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="true"
+          data-aos-anchor-placement="top-center"
+        >
           <div class="something">
             <h2 class="something_h2">Some Things I've Built</h2>
             <div class="text_line"></div>
@@ -244,8 +286,52 @@
                     distinctio, aliquid hic magni unde vitae aut, fugit
                     reiciendis dolores ipsa esse numquam illo.
                     <div class="project_links">
-                      <a href="https://github.com/Amoghtech" aria-label="GitHub Link"  rel="noopener noreferrer" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" class="external" stroke-linejoin="round" class="feather feather-github"><title>GitHub</title><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
-                      <a href="https://halcyon-theme.netlify.com/" aria-label="External Link"  rel="noopener noreferrer" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" class="external" stroke-linejoin="round" class="feather feather-external-link"><title>External Link</title><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
+                      <a
+                        href="https://github.com/Amoghtech"
+                        aria-label="GitHub Link"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          role="img"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          class="external"
+                          stroke-linejoin="round"
+                          class="feather feather-github"
+                        >
+                          <title>GitHub</title>
+                          <path
+                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                          ></path></svg
+                      ></a>
+                      <a
+                        href="https://halcyon-theme.netlify.com/"
+                        aria-label="External Link"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          role="img"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          class="external"
+                          stroke-linejoin="round"
+                          class="feather feather-external-link"
+                        >
+                          <title>External Link</title>
+                          <path
+                            d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                          ></path>
+                          <polyline points="15 3 21 3 21 9"></polyline>
+                          <line x1="10" y1="14" x2="21" y2="3"></line></svg
+                      ></a>
                     </div>
                   </div>
                 </div>
@@ -265,8 +351,52 @@
                     distinctio, aliquid hic magni unde vitae aut, fugit
                     reiciendis dolores ipsa esse numquam illo.
                     <div class="project_links">
-                      <a href="https://github.com/Amoghtech" aria-label="GitHub Link"  rel="noopener noreferrer" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" class="external" stroke-linejoin="round" class="feather feather-github"><title>GitHub</title><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
-                      <a href="https://halcyon-theme.netlify.com/" aria-label="External Link"  rel="noopener noreferrer" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" class="external" stroke-linejoin="round" class="feather feather-external-link"><title>External Link</title><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
+                      <a
+                        href="https://github.com/Amoghtech"
+                        aria-label="GitHub Link"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          role="img"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          class="external"
+                          stroke-linejoin="round"
+                          class="feather feather-github"
+                        >
+                          <title>GitHub</title>
+                          <path
+                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                          ></path></svg
+                      ></a>
+                      <a
+                        href="https://halcyon-theme.netlify.com/"
+                        aria-label="External Link"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          role="img"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          class="external"
+                          stroke-linejoin="round"
+                          class="feather feather-external-link"
+                        >
+                          <title>External Link</title>
+                          <path
+                            d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                          ></path>
+                          <polyline points="15 3 21 3 21 9"></polyline>
+                          <line x1="10" y1="14" x2="21" y2="3"></line></svg
+                      ></a>
                     </div>
                   </div>
                 </div>
@@ -278,29 +408,54 @@
                   />
                 </div>
               </li>
-
             </ul>
           </div>
         </section>
-<div class="line"></div>
-        <section class="contact">
+        <div class="line"></div>
+        <section
+          id="contact"
+          class="contact"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="true"
+          data-aos-anchor-placement="top-center"
+        >
           <p class="whatnext">What's Next?</p>
           <h2>Get In Touch</h2>
-          <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita adipisci fugit odio! Quos unde sed voluptatibus voluptates officia veniam. Eius non obcaecati eaque?</p>
+          <p class="message">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+            adipisci fugit odio! Quos unde sed voluptatibus voluptates officia
+            veniam. Eius non obcaecati eaque?
+          </p>
           <a href="#" class="hello">Say Hello</a>
         </section>
-
 
         <div class="footer-line">hi</div>
       </main>
       <footer class="copyright">
         <p>Designed and Built by Amogh Nagar</p>
       </footer>
-      <div class="right-bar">
+      <div
+        class="right-bar"
+        data-aos="slide-up"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="true"
+        data-aos-anchor-placement="top-center"
+      >
         <div class="email">
           <a href="" class="email-link">amoghnagar1111@gmail.com</a>
         </div>
       </div>
     </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
