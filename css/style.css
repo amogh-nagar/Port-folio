@@ -391,7 +391,7 @@ h2 {
   padding: 15px 24px;
   z-index: 2;
   /* margin-left: 50px; */
-  padding-right: 200px;
+  padding-right: 50px;
   background-color: #112240;
   box-shadow: 2px 7px 15px 7px rgba(0, 0, 0, 0.5);
 }
@@ -422,7 +422,7 @@ h2 {
   padding: 15px 24px;
 
   /* z-index: 5; */
-  padding-right: 200px;
+  padding-right: 50px;
 
   margin-right: -10px;
   background-color: #112240;
