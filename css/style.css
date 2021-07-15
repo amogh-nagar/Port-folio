@@ -723,4 +723,12 @@ right:0;
   padding: 2px 1px;
   margin-right: 1px;
 }
+.project__image{
+  height:200px;
+  width:300px;
+}
+.project__image-right{
+  height:200px;
+  width:300px;
+}
 }
