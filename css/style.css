@@ -209,12 +209,17 @@ main {
   justify-content: center;
   flex-direction: column;
 }
-
-.intro {
+.r1{
   display: flex;
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
+}
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* flex-direction: column; */
   align-self: stretch;
   margin-bottom: 20px;
   
